@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/','App\Http\Controllers\AccueilController@accueil');
+Route::get('/payement','App\Http\Controllers\PayementController@payeemnt');
