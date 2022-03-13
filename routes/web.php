@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/','App\Http\Controllers\AccueilController@accueil');
-Route::get('/payement','App\Http\Controllers\PayementController@payeemnt');
+Route::get('/','App\Http\Controllers\AccueilController@accueil')->name('accueil');
+Route::get('/payement','App\Http\Controllers\PayementController@payeemnt')->name('payement');
+Route::get('/show/{id}','App\Http\Controllers\AccueilController@show')->name('show');
